@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import Store from "./store.js";
 import "./bootstrap.min.css";
 import "./index.css";
+import "./firebase.js";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
