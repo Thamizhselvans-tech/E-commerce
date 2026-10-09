@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: chocolatey-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5050
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_TOKEN
+        generateValue: true
